@@ -9,10 +9,12 @@
 
 function capitalize(str) {
   let arr = str.split(" ");
+  let cap = "";
   arr.map((element, index, array) => {
     array[index] = element.replace(element[0], element[0].toUpperCase());
   });
-  console.log(arr);
+  cap = arr.join(" ");
+  return cap;
 }
 
 capitalize("a short sentence");
